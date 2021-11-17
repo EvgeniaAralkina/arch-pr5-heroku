@@ -28,6 +28,10 @@ dependencies {
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.1'
 
+     runtimeOnly 'mysql:mysql-connector-java'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    
+    implementation group: 'org.hibernate.orm', name: 'hibernate-core', version: '6.0.0.Alpha7'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
